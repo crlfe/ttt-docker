@@ -27,10 +27,6 @@ This is only needed if you modify files in the `ttt-docker` directory.
 
 Open a terminal in your `ttt-docker` directory and run:
 
-    docker build --tag crlfe/ttt-docker .
+    docker build --tag ttt-docker .
 
-To run the image, use the `docker run` command above.
-
-To delete the image and revert to the prebuilt version:
-
-    docker image rm crlfe/ttt-docker
+To run the custom image, use the `docker run` command above without `crlfe/`.
