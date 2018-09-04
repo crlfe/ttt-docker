@@ -1,9 +1,9 @@
 FROM debian:buster
 
 RUN apt-get update -q \
-    && apt-get install -qy build-essential jekyll pandoc python3 \
-                           python-bibtexparser texlive-bibtex-extra \
-                           texlive-latex-extra
+    && apt-get install -qy \
+            build-essential jekyll pandoc python3 python-bibtexparser \
+            python-yaml texlive-bibtex-extra texlive-latex-extra
 
 ENTRYPOINT /usr/local/sbin/docker-entry.sh
 WORKDIR /mnt

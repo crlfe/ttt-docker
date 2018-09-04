@@ -16,8 +16,8 @@ Open a terminal in your `teachtogether.tech` directory and run:
 The terminal will switch to Linux bash with a builder@docker prompt.
 
     cd host
-    make web
-    jekyll serve -s ./docs -I --host 0.0.0.0   # Instead of `make serve`
+    make lang=en site
+    jekyll serve -I --host 0.0.0.0   # Instead of `make serve`
 
 Browse to http://127.0.0.1:4000 to see the in-development site.
 
